@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tns-outer{
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.tns-controls{
+  position: absolute;
+  top:50%;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  outline:none;
+}
+
+.tns-controls button:nth-last-of-type(1){
+  position: absolute;
+  right: 0;
+}
+
+button{
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 5px solid black;
+}
+
+.tns-nav-active{
+  background-color: lightpink;
+}
+button:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+.tns-nav{
+  position: absolute;
+  bottom: -25px;
+  z-index: 50;
+  left: 50%;
+  width: auto;
+  transform: translateX(-50%);
+}
