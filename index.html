@@ -3,7 +3,8 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
@@ -28,30 +29,44 @@
 
   <body>
 
-    <div class="header">
-        <div class="tabs home"></div>
-        <div class="tabs menu"></div>
-        <div class="tabs about"></div>
-        <div class="logo"></div>
+    <div class="menu">
+        <div class="item"><a href="#">Home</a></div>
+        <div class="item">
+          <a href="#">Menu</a>
+          <div class="sub_menu">
+            <div class="sub_item"><a href="#">Food0</a></div>
+            <div class="sub_item"><a href="#">Food1</a></div>
+            <div class="sub_item"><a href="#">Food2</a></div>
+            <div class="sub_item"><a href="#">Food3</a></div>
+            <div class="sub_item"><a href="#">Food4</a></div>
+          </div>
+        </div>
+        <div class="item"><a href="#">About</a></div>
     </div>
-    <div class="line red"></div>
+    <div class="logo">
+        <img src="/img/sealanddelights.png" alt="" />
+    </div>
 
-    <div class="my-slider">
-      <div class="sliderimg">
-        <img src="/img/salmonbowl.jpg" alt="" />
-      </div>
-      <div class="sliderimg">
-        <img src="/img/porkcutlet.jpg" alt="" />
-      </div>
-      <div class="sliderimg">
-        <img src="/img/scallops.jpg" alt="" />
-      </div>
-      <div class="sliderimg">
-        <img src="/img/raspberrycake.jpg" alt="" />
-      </div>
+    <div class="line red"></div>
+    
+    <div class="thing">
+        <div class="my-slider">
+        <div class="sliderimg">
+            <img src="/img/salmonbowl.jpg" alt="" />
+        </div>
+        <div class="sliderimg">
+            <img src="/img/porkcutlet.jpg" alt="" />
+        </div>
+        <div class="sliderimg">
+            <img src="/img/scallops.jpg" alt="" />
+        </div>
+        <div class="sliderimg">
+            <img src="/img/raspberrycake.jpg" alt="" />
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <script src="js/index.js"></script>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="js/index.js"></script>
 
     <div class="line teal"></div>
     <div class="line teal"></div>

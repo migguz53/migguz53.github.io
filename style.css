@@ -1,8 +1,91 @@
 body {
-  font-family: sans-serif;
-  background-color: rgb(255, 255, 255);
+  font-family: 'Bebas Neue', cursive;
+  background-color: white;
   margin: 0;
   padding: 0;
+}
+
+a{
+  color: #7B7B7B;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.item a:hover{
+  border-bottom: 5px solid salmon;
+}
+
+.menu{
+  display: grid;
+  position: fixed;
+  top:0;
+  left:20px;
+  right:20px;
+  background-color: white;
+
+  /* this is based on having 3 top level items */
+  grid-template-columns: 1fr 1fr 1fr 4fr;
+  padding: 20px;
+  padding-bottom: 25px;
+  border-bottom: 25px solid #FF1919;
+  z-index: 100;
+}
+
+.sub_menu{
+  border: 5px solid black;
+  position: absolute;
+  background-color: white;
+  /* this hides the sub menu by default */
+  display: none;
+  z-index: 100;
+}
+
+.item:hover .sub_menu{
+  /* this shows it when you mouse over it */
+  display: block;
+}
+
+.sub_item{
+  padding: 5px;
+}
+
+.sub_item:hover{
+  background-color: salmon;
+}
+
+.logo{
+    position: absolute;
+    z-index: 150;
+    width: 40vw;
+    height: 280px;
+    right: 30px;
+    top: -105px;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+.thing{
+    position: relative;
+    margin: auto;
+    top: 50px;
+}
+
+.my-slider{
+    position: relative;
+    margin: auto;
+    top: 100px;
 }
 
 img {
@@ -30,8 +113,8 @@ img {
 .tns-controls{
   position: absolute;
   top:50%;
-  left: 0;
-  right: 0;
+  left: 20%;
+  right: 20%;
   z-index: 50;
   outline:none;
 }

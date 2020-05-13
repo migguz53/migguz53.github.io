@@ -4,3 +4,6 @@ var slider = tns({
     slideBy: "page",
     autoplay: false
 });
+
+console.log("load");
+// right_image
