@@ -20,8 +20,8 @@ a{
   display: grid;
   position: fixed;
   top:0;
-  left:20px;
-  right:20px;
+  left:0px;
+  right:0px;
   background-color: white;
 
   /* this is based on having 3 top level items */
@@ -167,7 +167,9 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 5px;
+    position: relative;
+    top: 100px;
+    grid-gap: 30px;
 }
 
 
@@ -177,8 +179,10 @@ button:hover {
 
 
 .foodimg{
+    margin: auto;
     position: relative;
-    width: 200px;
+    width: 30vw;
+    height: 400px;
 }
 
 .overlay {
@@ -191,7 +195,7 @@ button:hover {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #FF1919;
 }
 
 .foodimg:hover .overlay {
@@ -200,7 +204,7 @@ button:hover {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 3em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -211,5 +215,7 @@ button:hover {
 .killme {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
