@@ -87,6 +87,7 @@ a{
     position: relative;
     margin: auto;
     top: 50px;
+    max-width: 1000px;
 }
 
 .my-slider{
@@ -109,7 +110,7 @@ img {
 .sliderimg img{
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .tns-outer{
@@ -120,8 +121,8 @@ img {
 .tns-controls{
   position: absolute;
   top:50%;
-  left: 20%;
-  right: 20%;
+  left: 0%;
+  right: 0%;
   z-index: 50;
   outline:none;
 }
@@ -136,6 +137,7 @@ button{
   font-size: 1.5rem;
   background-color: white;
   border: 3px solid black;
+  
 }
 
 .tns-nav-active{
@@ -210,9 +212,10 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.killme {
+.shadow {
   display: block;
   width: 100%;
   height: 100%;
@@ -242,4 +245,243 @@ button:hover {
   font-size: 2.5em;
   text-align: center;
   padding-top: 10px;
+}
+
+
+.title{
+  font-size: 3em;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  top: 0px;
+}
+
+.aboutme{
+
+  position: relative;
+  top: 150px;
+  left: 5vw;
+  max-width: 40vw;
+}
+
+h1{
+  font-size: 6em;
+  margin-bottom: -40px;
+  line-height: 100px;
+}
+
+h2{
+  font-size: 4em;
+  margin-bottom: -20px;
+}
+
+h3{
+  font-size: 2.5em;
+  margin-bottom: -10px;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+  font-size: 3vw;
+}
+
+.calories{
+  margin-top: -20px;
+  margin-bottom: 30px;
+  font-size: 1vw;
+  font-style: italic;
+}
+
+.aboutimg{
+  margin: auto;
+  height: 800px;
+  width: 70vw;
+  margin-bottom: 100px;
+}
+
+.aboutimg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.line{
+  background-color: #0DFFDA;
+  height: 30px;
+  width: 70vw;
+  position: relative;
+  top: 200px;
+}
+
+.linetwo{
+  background-color: #00B398;
+  height: 30px;
+  width: 50vw;
+  position: relative;
+  top: 200px;
+}
+
+
+ul{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.7em;
+}
+
+ol{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.7em;
+}
+
+li{
+  margin: 5px;
+}
+
+.recipegrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  top: 200px;
+  left: 5vw;
+  max-width: 80vw;
+  grid-gap: 20px;
+}
+
+.instructions{
+  margin-top: 125px;
+}
+
+#pleasework{
+  font-size: 1em;
+}
+
+#pleasework2{
+  font-size: 1em;
+}
+
+#pleasework3{
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+
+  .aboutme{
+    max-width: 50vw;
+  }
+  
+  .aboutimg{
+    height: 500px;
+    width: 80vw;
+    margin-bottom: 80px;
+  }
+  .calories{
+    font-size: 1.1em;
+  }
+  
+  li{
+    font-size: .8em;
+  }
+  h1{
+    line-height: 100px;
+    margin-bottom: -20px;
+  }
+  h2{
+    margin-bottom: -10px;
+  }
+  .instructions{
+    margin-top: 145px;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px){
+
+  .gallery_menu{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    position: relative;
+    top: 100px;
+    grid-gap: 20px;
+  }
+
+  .foodimg{
+    margin: auto;
+    position: relative;
+    width: 45vw;
+    height: 300px;
+  }
+  .text{
+    font-size: 2.5em;
+    line-height: 40px;
+    text-align: center;
+  }
+  .item{
+    font-size: .9em;
+    padding-right: 30px;
+  }
+
+  .aboutme{
+    max-width: 70vw;
+    margin-top: -80px;
+  }
+  
+  .aboutimg{
+    height: 400px;
+    width: 80vw;
+    margin-bottom: 40px;
+  }
+  p{
+    margin-top: 40px;
+    font-size: 1.4em;
+  }
+  h1{
+    line-height: 90px;
+  }
+  .calories{
+    font-size: 1.1em;
+  }
+  li{
+    font-size: .8em;
+  }
+  .recipegrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    top: 200px;
+    left: 5vw;
+    max-width: 80vw;
+    grid-gap: 20px;
+  }
+  .instructions{
+    margin-top: -70px;
+  }
 }
