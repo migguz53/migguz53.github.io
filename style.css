@@ -256,11 +256,93 @@ button:hover {
 }
 
 .aboutme{
-  margin: auto;
+
   position: relative;
-  top: 100px;
+  top: 150px;
+  left: 5vw;
+  max-width: 40vw;
 }
 
 h1{
-  font-size: 3em;
+  font-size: 6em;
+  margin-bottom: -40px;
+}
+
+h2{
+  font-size: 4em;
+  margin-bottom: -20px;
+}
+
+h3{
+  font-size: 2.5em;
+  margin-bottom: -10px;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+  font-size: 3vw;
+}
+
+.calories{
+  margin-top: -20px;
+  margin-bottom: 30px;
+  font-size: 1vw;
+  font-style: italic;
+}
+
+.aboutimg{
+  margin: auto;
+  height: 800px;
+  width: 60vw;
+}
+
+.aboutimg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.line{
+  background-color: #0DFFDA;
+  height: 30px;
+  width: 70vw;
+  position: relative;
+  top: 200px;
+}
+
+.linetwo{
+  background-color: #00B398;
+  height: 30px;
+  width: 50vw;
+  position: relative;
+  top: 200px;
+}
+
+
+ul{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.7em;
+}
+
+ol{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.7em;
+}
+
+li{
+  margin: 5px;
+}
+
+.recipegrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  top: 200px;
+  left: 5vw;
+  max-width: 80vw;
+  grid-gap: 20px;
+}
+
+.instructions{
+  margin-top: 150px;
 }
