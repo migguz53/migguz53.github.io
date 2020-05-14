@@ -214,7 +214,7 @@ button:hover {
   -ms-transform: translate(-50%, -50%);
 }
 
-.killme {
+.shadow {
   display: block;
   width: 100%;
   height: 100%;
@@ -345,4 +345,16 @@ li{
 
 .instructions{
   margin-top: 150px;
+}
+
+#pleasework{
+  font-size: 1em;
+}
+
+#pleasework2{
+  font-size: 1em;
+}
+
+#pleasework3{
+  font-size: 1em;
 }
