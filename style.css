@@ -254,3 +254,13 @@ button:hover {
   text-align: center;
   top: 0px;
 }
+
+.aboutme{
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+
+h1{
+  font-size: 3em;
+}
